@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 // import { motion, useInView } from 'framer-motion'
+import { isMobile } from 'react-device-detect';
 import { motion } from 'framer-motion'
 import './services.scss'
 
@@ -58,22 +59,22 @@ const Services = () => {
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
-        <motion.div className="box" whileHover={{ background: 'lightgray', color: 'black' }}>
+        <motion.div className="box" whileHover={!isMobile ? { background: 'lightgray', color: 'black' } : {}}>
           <h2>Branding</h2>
           <p>Modi, accusamus! Molestiae consequatur fuga doloribus id quaerat, tenetur corrupti aut modi nobis!</p>
           <button>Go</button>
         </motion.div>
-        <motion.div className="box" whileHover={{ background: 'lightgray', color: 'black' }}>
+        <motion.div className="box" whileHover={!isMobile ? { background: 'lightgray', color: 'black' } : {}}>
           <h2>Branding</h2>
           <p>Modi, accusamus! Molestiae consequatur fuga doloribus id quaerat, tenetur corrupti aut modi nobis!</p>
           <button>Go</button>
         </motion.div>
-        <motion.div className="box" whileHover={{ background: 'lightgray', color: 'black' }}>
+        <motion.div className="box" whileHover={!isMobile ? { background: 'lightgray', color: 'black' } : {}}>
           <h2>Branding</h2>
           <p>Modi, accusamus! Molestiae consequatur fuga doloribus id quaerat, tenetur corrupti aut modi nobis!</p>
           <button>Go</button>
         </motion.div>
-        <motion.div className="box" whileHover={{ background: 'lightgray', color: 'black' }}>
+        <motion.div className="box" whileHover={!isMobile ? { background: 'lightgray', color: 'black' } : {}}>
           <h2>Branding</h2>
           <p>Modi, accusamus! Molestiae consequatur fuga doloribus id quaerat, tenetur corrupti aut modi nobis!</p>
           <button>Go</button>
