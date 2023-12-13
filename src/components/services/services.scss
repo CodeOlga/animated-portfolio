@@ -15,11 +15,11 @@
     gap: 20px;
 
     @include mobile {
-      align-self: center;
-      text-align: center;
+      // align-self: center;
+      // text-align: center;
       flex-direction: column;
       padding-top: 20px;
-      width: 60%;
+      width: 70%;
     }
 
     p {
@@ -39,7 +39,7 @@
       border-top: 0.5px solid gray;
 
       @include mobile {
-        width: 260px;
+        width: 240px;
       }
     }
   }
