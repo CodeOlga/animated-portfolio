@@ -34,7 +34,7 @@
       line-height: 66px;
 
       @include mobile {
-        font-size: 36px;
+        font-size: 32px;
       }
     }
 
@@ -46,7 +46,7 @@
   .formContainer {
     flex: 1;
     position: relative;
-    transition: transform 0.3s ease-in-out;
+    // transition: transform 0.3s ease-in-out;
 
     // input:focus {
     //   margin-bottom: 400px; /* Ваша высота клавиатуры */
@@ -55,10 +55,11 @@
     @include mobile {
       width: 100%;
       padding: 50px;
-      
-      input:focus {
-      margin-bottom: 400px; /* Ваша высота клавиатуры */
-    }
+              overflow: auto;
+
+    //   input:focus {
+    //   margin-bottom: 400px; /* Ваша высота клавиатуры */
+    // }
     }
 
     .phoneSvg {
