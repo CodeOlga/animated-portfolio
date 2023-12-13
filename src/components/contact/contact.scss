@@ -48,13 +48,17 @@
     position: relative;
     transition: transform 0.3s ease-in-out;
 
-    input:focus {
-      margin-bottom: 200px; /* Ваша высота клавиатуры */
-    }
-    
+    // input:focus {
+    //   margin-bottom: 400px; /* Ваша высота клавиатуры */
+    // }
+
     @include mobile {
       width: 100%;
       padding: 50px;
+      
+      input:focus {
+      margin-bottom: 400px; /* Ваша высота клавиатуры */
+    }
     }
 
     .phoneSvg {
