@@ -3,6 +3,8 @@ import { motion, useInView } from 'framer-motion'
 import emailjs from '@emailjs/browser';
 import './contact.scss'
 
+const { VITE_REACT_APP_EMAILJS_SERVICE_ID, VITE_REACT_APP_EMAILJS_TEMPLATE_ID, VITE_REACT_APP_EMAILJS_PUBLIC_KEY } = import.meta.env;
+
 const variants = {
   initial: {
     y: 500,
@@ -30,8 +32,8 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
-      // emailjs.sendForm('service_sla0eua', 'template_ad3f5it', formRef.current, 'yUQmkW34Iv_U-iruH')
+    emailjs.sendForm(VITE_REACT_APP_EMAILJS_SERVICE_ID, VITE_REACT_APP_EMAILJS_TEMPLATE_ID, formRef.current, VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
+
       .then((result) => {
         setSuccess(true);
       }, (error) => {

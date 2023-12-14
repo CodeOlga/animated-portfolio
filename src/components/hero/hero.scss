@@ -43,6 +43,8 @@
       }
 
       .buttons {
+        position: relative;
+  z-index: 2; 
         button {
           padding: 20px;
           border: 1px solid #ffffff;
@@ -52,6 +54,7 @@
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
+        
         }
       }
 
@@ -59,7 +62,6 @@
         width: 50px;
 
         @include mobile {
-          // display: none;
           width: 40px;
         }
       }
