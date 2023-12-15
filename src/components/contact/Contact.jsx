@@ -27,7 +27,6 @@ const Contact = () => {
   const [success, setSuccess] = useState(false);
 
   const isInView = useInView(ref, { margin: '-100px' });
-  // const isInView = useInView(ref, { rootMargin: '-100px', triggerOnce: true, delay: 200 });
 
   const sendEmail = (e) => {
     e.preventDefault();
