@@ -257,7 +257,6 @@
 
 
 import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
 import './hero.scss';
 
 const textVariants = {
@@ -321,22 +320,12 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>Olga K</motion.h2>
           <motion.h1 variants={textVariants}>Web developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <Link
-              to="Portfolio"
-              smooth={true}
-              duration={500}
-              onClick={() => scrollToSection('Portfolio')}
-            >
+            <a href="#Portfolio" onClick={() => scrollToSection('Portfolio')}>
               <motion.button variants={textVariants}>See the Latest Works</motion.button>
-            </Link>
-            <Link
-              to="Contact"
-              smooth={true}
-              duration={500}
-              onClick={() => scrollToSection('Contact')}
-            >
+            </a>
+            <a href="#Contact" onClick={() => scrollToSection('Contact')}>
               <motion.button variants={textVariants}>Contact Me</motion.button>
-            </Link>
+            </a>
           </motion.div>
           <motion.img variants={textVariants} animate='scrollButton' src='/scroll.png' alt='Scroll' />
         </motion.div>
