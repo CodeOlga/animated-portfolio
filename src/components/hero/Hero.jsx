@@ -296,16 +296,12 @@ const sliderVariants = {
   },
 };
 
-const scrollToSection = (sectionId) => {
-  const targetElement = document.getElementById(sectionId);
-
-  if (targetElement) {
-    window.scrollTo({
-      top: targetElement.offsetTop,
-      behavior: 'smooth',
-    });
+function scrollToSection(sectionId) {
+  const targetSection = document.getElementById(sectionId);
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: 'smooth' });
   }
-};
+}
 
 const Hero = () => {
   return (
@@ -320,10 +316,10 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>Olga K</motion.h2>
           <motion.h1 variants={textVariants}>Web developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <a href="#Portfolio" onClick={() => scrollToSection('Portfolio')}>
+            <a href="#Portfolio" onClick={scrollToSection('targetSection')}>
               <motion.button variants={textVariants}>See the Latest Works</motion.button>
             </a>
-            <a href="#Contact" onClick={() => scrollToSection('Contact')}>
+            <a href="#Contact" onClick={scrollToSection('targetSection')}>
               <motion.button variants={textVariants}>Contact Me</motion.button>
             </a>
           </motion.div>
