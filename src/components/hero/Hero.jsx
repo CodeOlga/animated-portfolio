@@ -297,6 +297,17 @@ const sliderVariants = {
   },
 };
 
+const scrollToSection = (sectionId) => {
+  const targetElement = document.getElementById(sectionId);
+
+  if (targetElement) {
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth',
+    });
+  }
+};
+
 const Hero = () => {
   return (
     <div className='hero'>
@@ -310,10 +321,20 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>Olga K</motion.h2>
           <motion.h1 variants={textVariants}>Web developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <Link to="Portfolio" smooth={true} duration={500}>
+            <Link
+              to="Portfolio"
+              smooth={true}
+              duration={500}
+              onClick={() => scrollToSection('Portfolio')}
+            >
               <motion.button variants={textVariants}>See the Latest Works</motion.button>
             </Link>
-            <Link to="Contact" smooth={true} duration={500}>
+            <Link
+              to="Contact"
+              smooth={true}
+              duration={500}
+              onClick={() => scrollToSection('Contact')}
+            >
               <motion.button variants={textVariants}>Contact Me</motion.button>
             </Link>
           </motion.div>
