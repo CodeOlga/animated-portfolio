@@ -33,9 +33,15 @@ const Contact = () => {
 
     emailjs.sendForm(VITE_REACT_APP_EMAILJS_SERVICE_ID, VITE_REACT_APP_EMAILJS_TEMPLATE_ID, formRef.current, VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
 
-      .then((result) => {
+      // .then((result) => {
+      //   setSuccess(true);
+      // }, (error) => {
+      //   setError(true);
+      // });
+
+      .then(() => {
         setSuccess(true);
-      }, (error) => {
+      }, () => {
         setError(true);
       });
   };
