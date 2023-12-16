@@ -21,25 +21,22 @@ const Navbar = () => {
             aria-label="Twitter"
             target="_blank"
             rel="noopener noreferrer">
-            {/* <img src='/twitter_icon.svg' alt='twitter' /> */}
             <TwitterIcon />
           </a>
-          <a
+          {/* <a
             className='icon-link'
             href="https://instagram.com"
             aria-label="Instagram"
             target="_blank"
             rel="noopener noreferrer">
-            {/* <img src='/instagram_icon.svg' alt='instagram' /> */}
             <InstagramIcon />
-          </a>
+          </a> */}
           <a
             className='icon-link'
             href="https://facebook.com"
             aria-label="Facebook"
             target="_blank"
             rel="noopener noreferrer">
-            {/* <img src='/facebook_icon.svg' alt='facebook' /> */}
             <FacebookIcon />
           </a>
           <a
@@ -48,7 +45,6 @@ const Navbar = () => {
             aria-label="Linkedin"
             target="_blank"
             rel="noopener noreferrer">
-            {/* <img src='/github_icon1.svg' alt='github' /> */}
             <GithubIcon />
           </a>
           <a
@@ -57,7 +53,6 @@ const Navbar = () => {
             aria-label="Linkedin"
             target="_blank"
             rel="noopener noreferrer">
-            {/* <img src='/linkedin_icon.svg' alt='linkedin' /> */}
             <LinkedinIcon />
           </a>
         </div>
