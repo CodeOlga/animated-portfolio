@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import './navbar.scss'
 import Sidebar from '../sidebar/Sidebar'
 
+import { FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from '../../icons/Icons';
+
 const Navbar = () => {
   return (
     <div className='navbar'>
@@ -18,11 +20,26 @@ const Navbar = () => {
           <a href='#'><img src='/youtube.png' alt='youtube' /></a>
           <a href='#'><img src='/dribbble.png' alt='dribbble' /></a> */}
 
-          <a href='#'><img src='/twitter_icon.svg' alt='twitter' /></a>
-          <a href='#'><img src='/instagram_icon.svg' alt='instagram' /></a>
-          <a href='#'><img src='/facebook_icon.svg' alt='facebook' /></a>
-          <a href='#'><img src='/github_icon1.svg' alt='github' /></a>
-          <a href='#'><img src='/linkedin_icon.svg' alt='linkedin' /></a>
+          <a href='#'>
+            {/* <img src='/twitter_icon.svg' alt='twitter' /> */}
+            <TwitterIcon />
+          </a>
+          <a href='#'>
+            {/* <img src='/instagram_icon.svg' alt='instagram' /> */}
+            <InstagramIcon />
+          </a>
+          <a href='#'>
+            {/* <img src='/facebook_icon.svg' alt='facebook' /> */}
+            <FacebookIcon />
+          </a>
+          <a href='#'>
+            {/* <img src='/github_icon1.svg' alt='github' /> */}
+            <GithubIcon />
+          </a>
+          <a href='#'>
+            {/* <img src='/linkedin_icon.svg' alt='linkedin' /> */}
+            <LinkedinIcon />
+          </a>
         </div>
       </div>
     </div>

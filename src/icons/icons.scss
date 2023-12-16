@@ -1,0 +1,11 @@
+@import '../app.scss';
+
+    svg {
+      width: 30px;
+      height: 30px;
+
+      @include mobile {
+        width: 18px;
+        height: 18px;
+      }
+    }

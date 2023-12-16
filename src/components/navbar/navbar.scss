@@ -35,14 +35,14 @@
       gap: 10px;
     }
 
-    img {
-      width: 30px;
-      height: 30px;
+    // img {
+    //   width: 30px;
+    //   height: 30px;
 
-      @include mobile {
-        width: 18px;
-        height: 18px;
-      }
-    }
+    //   @include mobile {
+    //     width: 18px;
+    //     height: 18px;
+    //   }
+    // }
   }
 }
