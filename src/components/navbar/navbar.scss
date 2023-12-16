@@ -31,9 +31,18 @@
     display: flex;
     gap: 20px;
 
+    @include mobile {
+      gap: 10px;
+    }
+
     img {
-      width: 18px;
-      height: 18px;
+      width: 30px;
+      height: 30px;
+
+      @include mobile {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }
