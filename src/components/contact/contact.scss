@@ -64,17 +64,20 @@
       // text-align: center;
     }
 
-    .phoneSvg {
+    .phoneSvgWrap {
       stroke: orange;
       position: absolute;
       margin: auto;
       z-index: -1;
-      width: 300px;
-      height: 300px;
 
-      @include mobile {
-        width: 200px;
-        height: 200px;
+      .phoneSvg {
+        width: 300px;
+        height: 300px;
+
+        @include mobile {
+          width: 200px;
+          height: 200px;
+        }
       }
     }
 

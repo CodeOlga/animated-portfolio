@@ -76,7 +76,7 @@ const Contact = () => {
       </motion.div>
       <div className="formContainer">
         <motion.div
-          className="phoneSvg"
+          className="phoneSvgWrap"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           // animate={isInView ? 'animate' : 'initial'}
@@ -84,7 +84,9 @@ const Contact = () => {
         // transition={{ delay: 0.5, duration: 1 }}
 
         >
-          <svg viewBox="0 0 32.666 32.666">
+          <svg
+            className='phoneSvg'
+            viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
