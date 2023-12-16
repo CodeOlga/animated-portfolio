@@ -1,8 +1,11 @@
 @import '../app.scss';
 
     svg {
-      width: 30px;
-      height: 30px;
+      // fill: currentColor;
+      fill: #0d0d20;
+      // fill: #393d52;
+      width: 28px;
+      height: 28px;
 
       @include mobile {
         width: 18px;
