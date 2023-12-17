@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import './navbar.scss'
 import Sidebar from '../sidebar/Sidebar'
 
-import { FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from '../../icons/Icons';
+import { FacebookIcon, GithubIcon, LinkedinIcon, TwitterIcon } from '../../icons/Icons';
 
 const Navbar = () => {
   return (
